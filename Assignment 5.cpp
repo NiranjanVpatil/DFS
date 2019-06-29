@@ -1,8 +1,11 @@
 #include <iostream>
 #include<math.h>
 #include<string.h>
+
 using namespace std;
+
 #define pi 3.14
+
 class node
 {
 public:
@@ -13,6 +16,7 @@ public:
 	node*left=NULL;
 	node*right=NULL;
 };
+
 class BST
 {
 public:
@@ -28,6 +32,7 @@ public:
 	void display(node*);
 	void distance(node*temp,node*root, double x);
 };
+
 void BST::create()
 {
 	node* temp;
@@ -49,6 +54,7 @@ void BST::create()
 		insert(root,temp);
 	}
 }
+
 void BST::insert(node*root,node*temp)
 {
 
@@ -76,6 +82,7 @@ void BST::insert(node*root,node*temp)
 		}
 	}
 }
+
 void BST:: display(node*root)
 {
     if(root!=NULL)                                                     // inorder
@@ -89,6 +96,7 @@ void BST:: display(node*root)
 
 	}
 }
+
 void BST:: search(node*temp,char s[20])
 {
 	int count=0;
@@ -127,6 +135,7 @@ cin>>x;
 distance(temp,root,x);
 
 }
+
 void BST::distance(node*temp,node*root,double x)
 {
  if (root!=NULL)
