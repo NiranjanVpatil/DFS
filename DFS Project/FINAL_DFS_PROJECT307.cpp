@@ -100,7 +100,7 @@ int bst::search(node *root,char k[20])
     	c++;
     	if(strcmp(k,root->word)==0)
     	{
-    		cout<<"WORDS is NOT FOUND In TECHNICAL DIRECTORY."<<endl;
+    		cout<<"WORDS is FOUND In TECHNICAL DIRECTORY."<<endl;
 			cout<<"WORD IS : "<<root->word<<endl;
     	    cout<<"MEANNING IS :"<<root->mean<<endl<<endl;
     		cout<<"Number of comparison : "<<c<<endl;
